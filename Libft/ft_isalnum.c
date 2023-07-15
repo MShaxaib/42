@@ -21,8 +21,8 @@ int	ft_isalnum(int a)
 	}
 	return (0);
 }
-// int main (void)
-// {
-// 	ft_isalnum(1);
-// 	return(0);
-// }
+int main (void)
+{
+	ft_isalnum(1);
+	return(0);
+}

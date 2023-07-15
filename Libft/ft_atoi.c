@@ -15,13 +15,32 @@
 int ft_atoi(const char *str)
 {
 	int i;
-	char *str1;
+	int res;
+	int sgn;
 
-	i = 1;
-	str1 = str[0] - '\0';
-	
+	i = 0;
+	res = 0;
+	sgn = 1;
+
+if(str[0] == '-')	
+	{
+		sgn = -1;
+		i++;
+	}
+while(str[i] != '\0')
+{
+	res = res*10 + str[i] - '0';
+	i++;
+}
+	return(sgn*res);
 	
 
 
 	
+}
+int main()
+{
+	char str[] = "-1234";
+	printf("%d", ft_atoi(str));
+	return(0);
 }
