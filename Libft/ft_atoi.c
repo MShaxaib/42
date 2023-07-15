@@ -20,6 +20,7 @@ int ft_atoi(const char *str)
 	i = 1;
 	str1 = str[0] - '\0';
 	
+	
 
 
 	
