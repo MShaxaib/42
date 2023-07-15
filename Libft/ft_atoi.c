@@ -33,7 +33,7 @@ while(str[i] != '\0')
 	i++;
 }
 	return(sgn*res);
-	// test2
+	//somehow works
 
 
 	
