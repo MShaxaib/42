@@ -13,7 +13,7 @@
 #include "libft.h"
 
 
-int	ft_isdigit(int a)
+int	ft_isascii(int a)
 {
 	if (a >= 0 && a <= 127)
 	{

@@ -28,19 +28,15 @@ if(str[0] == '-')
 		i++;
 	}
 while(str[i] != '\0')
-{
-	res = res*10 + str[i] - '0';
-	i++;
-}
-	return(sgn*res);
-	//somehow works i am stupid
-
-
-	
+	{
+		res = res*10 + str[i] - '0';
+		i++;
+	}
+	return(sgn*res);	
 }
 int main()
 {
-	char str[] = "-1234";
+	char str[] = "-2147483647";
 	printf("%d", ft_atoi(str));
 	return(0);
 }
