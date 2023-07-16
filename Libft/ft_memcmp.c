@@ -36,7 +36,7 @@ int	main(void)
 	char str1[] = "hello";
 	char str2[] = "hea1llo";
 
-	printf("%d\n", memcmp(str1, str2, 5));
+	printf("%d\n", memcmp(str1, str2, 8));
 
-	printf("%d", ft_memcmp(str1, str2, 5));
+	printf("%d", ft_memcmp(str1, str2, 8));
 }
