@@ -23,9 +23,9 @@ size_t	ft_strlen(char const *str)
 	}
 	return (i);
 }
-int	main(void)
-{
-	// ft_strlen("hellooo");
-	printf("%d", ft_strlen("hello"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	// ft_strlen("hellooo");
+// 	printf("%d", ft_strlen("hello"));
+// 	return (0);
+// }

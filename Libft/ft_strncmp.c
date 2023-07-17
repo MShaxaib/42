@@ -30,13 +30,13 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 	
 	return(0);
 }
-int main()
-{
-	char s1[] = "hello";
-	char s2[] = "worlds";
+// int main()
+// {
+// 	char s1[] = "hello";
+// 	char s2[] = "worlds";
 
-	printf("%d\n", strncmp(s1, s2, 5));
+// 	printf("%d\n", strncmp(s1, s2, 5));
 	
-	printf("%d", ft_strncmp(s1, s2, 5));
-	return(0);
-}
+// 	printf("%d", ft_strncmp(s1, s2, 5));
+// 	return(0);
+// }

@@ -34,9 +34,9 @@ while(str[i] != '\0')
 	}
 	return(sgn*res);	
 }
-int main()
-{
-	char str[] = "-2147483647";
-	printf("%d", ft_atoi(str));
-	return(0);
-}
+// int main()
+// {
+// 	char str[] = "-2147483647";
+// 	printf("%d", ft_atoi(str));
+// 	return(0);
+// }

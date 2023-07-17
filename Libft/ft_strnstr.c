@@ -33,13 +33,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-int	main(void)
-{
-	char hay[] = "heloo";
-	char nedle[] = "l";
+// int	main(void)
+// {
+// 	char hay[] = "heloo";
+// 	char nedle[] = "l";
 
-	printf("%s\n", ft_strnstr(hay, nedle, 8));
+// 	printf("%s\n", ft_strnstr(hay, nedle, 8));
 
-	printf("%s\n", strnstr(hay, nedle, 8));
-	return (0);
-}
+// 	printf("%s\n", strnstr(hay, nedle, 8));
+// 	return (0);
+// }

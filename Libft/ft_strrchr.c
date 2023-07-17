@@ -32,11 +32,11 @@ char	*ft_strrchr(const char *s, int c)
 	else
 		return (NULL);
 }
-int	main(void)
-{
-	char *str;
+// int	main(void)
+// {
+// 	char *str;
 
-	printf("%s\n", (strrchr(str, '\0')));
-	printf("%s\n", (ft_strrchr(str, '\0')));
-	return (0);
-}
+// 	printf("%s\n", (strrchr(str, '\0')));
+// 	printf("%s\n", (ft_strrchr(str, '\0')));
+// 	return (0);
+// }

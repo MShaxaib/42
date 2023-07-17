@@ -31,12 +31,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-int	main(void)
-{
-	char str1[] = "hello";
-	char str2[] = "hea1llo";
+// int	main(void)
+// {
+// 	char str1[] = "hello";
+// 	char str2[] = "hea1llo";
 
-	printf("%d\n", memcmp(str1, str2, 8));
+// 	printf("%d\n", memcmp(str1, str2, 8));
 
-	printf("%d", ft_memcmp(str1, str2, 8));
-}
+// 	printf("%d", ft_memcmp(str1, str2, 8));
+// }

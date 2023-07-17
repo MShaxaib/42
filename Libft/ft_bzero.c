@@ -24,9 +24,9 @@ void	*ft_bzero(void *s, size_t n)
 	return (s);
 }
 
-int	main(void)
-{
-	char str[] = "123456";
-	printf("%s", ft_bzero(str,4));
-	return (0);
-}
+// int	main(void)
+// {
+// 	char str[] = "123456";
+// 	printf("%s", ft_bzero(str,4));
+// 	return (0);
+// }
