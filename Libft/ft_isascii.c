@@ -6,12 +6,11 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 16:08:05 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/05 18:44:23 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/17 16:47:44 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 int	ft_isascii(int a)
 {

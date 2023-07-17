@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 21:02:34 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/14 21:37:17 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/17 16:48:22 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (dstlen);
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	char dst[10] = "salam";
 // 	char src[] = "sha";

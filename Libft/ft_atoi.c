@@ -6,37 +6,38 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 20:36:52 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/11 20:40:08 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/17 21:54:13 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+#include <string.h>
+
+int	ft_atoi(const char *str)
 {
-	int i;
-	int res;
-	int sgn;
+	int	i;
+	int	res;
+	int	sgn;
 
 	i = 0;
 	res = 0;
 	sgn = 1;
-
-if(str[0] == '-')	
+	if (str[0] == '-')
 	{
 		sgn = -1;
 		i++;
 	}
-while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		res = res*10 + str[i] - '0';
+		res = res * 10 + str[i] - '0';
 		i++;
 	}
-	return(sgn*res);	
+	return (sgn * res);
 }
-// int main()
-// {
-// 	char str[] = "-2147483647";
-// 	printf("%d", ft_atoi(str));
-// 	return(0);
-// }
+int main()
+{
+	char escape[] = "+-42";
+	printf("%d", ft_atoi(escape));
+	return(0);
+}

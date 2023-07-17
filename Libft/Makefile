@@ -1,6 +1,6 @@
-Name: libft.a
+NAME= libft.a
 
-Files: ft_isalpha.c\
+FILES= ft_isalpha.c\
  		ft_strchr.c\
 		ft_tolower.c\
 		ft_isascii.c\
@@ -8,11 +8,11 @@ Files: ft_isalpha.c\
 		ft_strncmp.c\
 		ft_toupper.c\
 		ft_atoi.c\
-		ft_isdigit\.c\
+		ft_isdigit.c\
 		ft_memcpy.c\
 		ft_strlcat.c\
 		ft_bzero.c\
-		ft_isprint.\c\
+		ft_isprint.c\
 		ft_memmove.c\
 		ft_strlcpy.c\
 		ft_strnstr.c\
@@ -22,8 +22,21 @@ Files: ft_isalpha.c\
 		ft_strlen.c\
 		ft_strrchr.c
 
-OBJS: $(Files:.c=.0)
+OBJS = $(FILES:.c=.o)
 CC = cc
 CFlags = -Wall -Werror -Wextra
 
+all: $(NAME)
+
 .c.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+
+$(NAME): $(OBJS)
+	ar -rc $(NAME) $(OBJS)
+
+clean:
+	rm -f $(OBJS)
+fclean: clean
+	rm -f $(NAME)
+
+re:	fclean all

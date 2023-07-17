@@ -6,16 +6,15 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 15:53:29 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/09 19:11:41 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/17 18:52:30 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
 int	ft_isdigit(int a)
 {
-	if (a >= 0 && a <= 9)
+	if (a >= '0' && a <= '9')
 	{
 		return (1);
 	}
@@ -23,6 +22,6 @@ int	ft_isdigit(int a)
 }
 // int main(void)
 // {
-// ft_isdigit(a);
-// return(0);
+// 	printf("%d", ft_isdigit('0'));
+// 	return(0);
 // }

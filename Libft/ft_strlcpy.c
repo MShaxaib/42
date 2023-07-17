@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 18:41:44 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/09 18:05:45 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/17 16:51:12 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	// while (src[dstsize] != '\0')
 	while (*(src + i))
 	{
 		i++;
