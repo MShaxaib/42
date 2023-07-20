@@ -20,11 +20,14 @@ FILES= ft_isalpha.c\
 		ft_memchr.c\
 		ft_memset.c\
 		ft_strlen.c\
-		ft_strrchr.c
+		ft_calloc.c\
+		ft_strdup.c\
+		ft_strrchr.c\
+		ft_substr.c
 
 OBJS = $(FILES:.c=.o)
 CC = cc
-CFlags = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 

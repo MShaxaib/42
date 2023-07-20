@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 18:49:18 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/11 19:51:10 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/18 18:56:48 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = -1;
 	ptsrc = (unsigned char *)src;
 	ptdst = (unsigned char *)dst;
-	while (++i < n)
+	while (++i < (int)n)
 	{
 		ptdst[i] = ptsrc[i];
 	}

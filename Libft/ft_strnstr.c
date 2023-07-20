@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/10 20:38:12 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/17 21:37:24 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/18 21:07:36 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,22 @@
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
-	size_t	haystack_len;
-	size_t	needle_len;
+	size_t	j;
 
+	if (ft_strlen((char *)needle) == 0)
+		return ((char *)haystack);
 	i = 0;
-	haystack_len = ft_strlen((char *)haystack);
-	needle_len = ft_strlen((char *)needle);
-	if (!*haystack && !*needle)
-		return ((char*)haystack);
-	if (haystack_len < needle_len || len == 0)
-		return (NULL);
-	if (!*haystack && !len)
-		return ((char *)haystack);
-	if (!*needle)
-		return ((char *)haystack);
-	while (i < len - needle_len && haystack[i])
+	while (i < len && haystack[i] != 0)
 	{
-		if(ft_strncmp(haystack + i - 1, needle, needle_len) == 0)	
-		{
-			return((char*)haystack + i);
-		}
+		j = 0;
+		while (needle[j] != 0 && haystack[i + j] == needle[j] && i + j < len)
+			if (needle[++j] == 0)
+				return ((char *)haystack + i);
 		i++;
 	}
-	return(0);
+	return (NULL);
 }
+
 // int	main(void)
 // {
 // 	char haystack [30] = "aaabcabcd";

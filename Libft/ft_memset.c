@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:15:32 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/05 18:45:24 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/18 18:57:40 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	i = -1;
 	f = (unsigned char *)b;
-	while (++i < len)
+	while (++i < (int)len)
 		f[i] = c;
 	return (b);
 }

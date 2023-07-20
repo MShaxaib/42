@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 18:59:31 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/17 18:42:24 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/20 21:07:03 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <string.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 // string check
 
@@ -38,6 +39,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t n);
 int		ft_atoi(const char *str);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 // mem related
 
@@ -46,5 +48,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+
+//Malloc
+
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(char *src);
 
 #endif

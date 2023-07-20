@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 16:46:18 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/18 18:57:22 by mshazaib         ###   ########.fr       */
+/*   Created: 2023/07/18 19:32:22 by mshazaib          #+#    #+#             */
+/*   Updated: 2023/07/18 21:12:36 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_bzero(void *s, size_t n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*f;
-	int				i;
+	char	*str;
 
-	i = -1;
-	f = (unsigned char *)s;
-	while (++i < (int)n)
-		f[i] = '\0';
-	return (s);
+	str = malloc(count * size);
+	if (str != NULL)
+	{
+		ft_bzero(str, count * size);
+	}
+	return (str);
 }
-
-// int	main(void)
+// int main()
 // {
-// 	char str[] = "123456";
-// 	printf("%s", ft_bzero(str,4));
-// 	return (0);
+// 	printf("%s", ft_calloc(SIZE_MAX, SIZE_MAX));
+// 	return(0);
 // }
