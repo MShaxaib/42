@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 18:59:31 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/20 21:07:03 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/22 20:24:32 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int		ft_atoi(const char *str);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 // mem related
 

@@ -23,6 +23,8 @@ FILES= ft_isalpha.c\
 		ft_calloc.c\
 		ft_strdup.c\
 		ft_strrchr.c\
+		ft_strjoin.c\
+		ft_strtrim.c\
 		ft_substr.c
 
 OBJS = $(FILES:.c=.o)

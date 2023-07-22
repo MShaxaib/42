@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 17:43:31 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/20 21:15:35 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/22 21:21:10 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char			*newstring;
 	unsigned int	i;
 	int				j;
-	int				actual_length;
+	int				actual_length; 
 
 	j = 0;
 	actual_length = 0;
@@ -44,16 +44,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	newstring[j] = '\0';
 	return (newstring);
-	free(newstring);
 }
-// int	main(void)
-// {
-// 	char str[10] = "Hello";
-// 	char *substring = ft_substr(str, 2, 4);
-// 	if (substring != NULL)
-// 	{
-// 		printf("%s", substring);
-// 		free(substring);
-// 	}
-// 	return (0);
-// }
+int	main(void)
+{
+	char str[10] = "Hello";
+	char *substring = ft_substr(str, 2, 4);
+	if (substring != NULL)
+	{
+		printf("%s", substring);
+	}
+	return (0);
+}
