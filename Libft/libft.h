@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 21:51:55 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/27 21:53:14 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:08:34 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ///////////////////////////////////*String Check*/////////////////////////////
 
 int		ft_isprint(int a);
-int		ft_isalpha(char a);
+int		ft_isalpha(int a);
 int		ft_isdigit(int a);
 int		ft_isalnum(int a);
 size_t	ft_strlen(char const *str);
@@ -45,6 +45,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	**ft_split(char const *s, char c);
 
 ///////////////////////////////////*Mem-related*//////////////////////////
 
@@ -63,6 +64,7 @@ char	*ft_strdup(char *src);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 ////////////////////////////////////*Bonus*/////////////////////////////
 typedef struct s_list

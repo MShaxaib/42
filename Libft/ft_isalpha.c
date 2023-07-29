@@ -6,13 +6,13 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 19:58:55 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/17 18:41:37 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:05:47 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char a)
+int	ft_isalpha(int a)
 {
 	if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122))
 	{
@@ -20,8 +20,3 @@ int	ft_isalpha(char a)
 	}
 	return (0);
 }
-// int main(void)
-// {
-//     ft_isaplha('5');
-//     return(0);
-// }

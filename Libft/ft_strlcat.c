@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 21:02:34 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/18 18:57:11 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/29 22:29:32 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	dstlen = strlen(dst);
 	srclen = strlen((char *)src);
-	if (dstsize < dstlen)
-		return (srclen + dstsize);
+	if (dstsize <= dstlen)
+		return (dstsize + srclen);
 	j = 0;
 	while (dstlen + 1 < dstsize && src[j] != 0)
 		dst[dstlen++] = src[j++];
 	if (dstlen < dstsize)
 		dst[dstlen] = '\0';
-	while (src[j++] != 0)
+	while (src[j++] != '\0')
 		dstlen++;
 	return (dstlen);
 }

@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 20:36:52 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/18 19:17:14 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/29 20:18:12 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,8 @@ int	ft_atoi(const char *str)
 	}
 	while ((str[i] >= '0' && str[i] <= '9'))
 	{
-		// while (str[i] != '\0')
-		// {
 			res = res * 10 + str[i] - '0';
 			i++;
-		// }
 	}
 	return (sgn * res);
 }
-// int	main(void)
-// {
-// 	// char escape[] = "+42lyon";
-// 	printf("%d", ft_atoi("1"));
-// 	return (0);
-// }

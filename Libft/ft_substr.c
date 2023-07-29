@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 17:43:31 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/24 20:21:11 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/29 20:26:45 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,30 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int				orignal_len;
-	char			*newstring;
-	unsigned int	i;
-	int				j;
-	int				actual_length; 
+	char		*str;
+	size_t		s_len;
 
-	j = 0;
-	actual_length = 0;
-	orignal_len = 0;
-	i = 0;
-	orignal_len = ft_strlen(s);
-	if (start < 0)
+	if (!s)
 		return (NULL);
-	while (s[i] && i < start + len)
+	if (!s || !*s)
+		len = 0;
+	else
 	{
-		actual_length++;
-		i++;
+		s_len = ft_strlen(s);
+		if (s_len < len)
+			len = s_len - start;
+		if ((start + len) > s_len)
+			len--;
+		if (s_len < start || (len == (unsigned long)-1))
+			len = 0;
 	}
-	newstring = (char *)malloc((actual_length + 1) * sizeof(char));
-	if (newstring == NULL)
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
-	i = start;
-	while (s[i] && i < start + len)
-	{
-		newstring[j] = s[i];
-		i++;
-		j++;
-	}
-	newstring[j] = '\0';
-	return (newstring);
+	str[len] = '\0';
+	while (len--)
+		*(str + len) = *(s + start + len);
+	return (str);
 }
 // int	main(void)
 // {
