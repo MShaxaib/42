@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 19:21:08 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/27 21:13:56 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/30 18:23:17 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *current;
-	t_list *next;
+	t_list	*current;
+	t_list	*next;
 
 	current = *lst;
-
 	if (!*lst)
 		return ;
 	while (current != NULL)

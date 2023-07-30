@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 21:19:38 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/27 21:53:20 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/30 18:24:58 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_node;
-	t_list *new_list;
-	void *con;
+	t_list	*new_node;
+	t_list	*new_list;
+	void	*con;
 
 	new_node = 0;
 	new_list = 0;
-
 	if (!lst || !f)
 		return (NULL);
 	new_list = NULL;
@@ -28,7 +27,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	{
 		con = f(lst->content);
 		new_node = ft_lstnew(con);
-
 		if (!new_node)
 		{
 			del(con);

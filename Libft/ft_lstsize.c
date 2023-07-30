@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 18:48:21 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/27 18:59:33 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/30 18:25:45 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int s;
+	int	s;
 
 	s = 0;
-
 	while (lst)
 	{
 		lst = lst->next;

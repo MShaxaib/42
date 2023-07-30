@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:15:32 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/18 18:57:40 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/30 18:26:43 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,3 @@ void	*ft_memset(void *b, int c, size_t len)
 		f[i] = c;
 	return (b);
 }
-
-// int	main(void)
-// {
-// 	char str[] = "123456";
-// 	printf("%s", ft_memset(str, '7', 3));
-// 	return (0);
-// }

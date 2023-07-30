@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 20:15:22 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/29 19:59:51 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/30 18:28:11 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strcpy(char *dest, char *src)
 char	*ft_strdup(char *src)
 {
 	char	*str;
-	size_t len;
+	size_t	len;
 
 	len = ft_strlen(src) + 1;
 	str = (char *)malloc(len);
@@ -40,11 +40,3 @@ char	*ft_strdup(char *src)
 	str = ft_strcpy(str, src);
 	return (str);
 }
-// int main (void)
-// {
-
-// char *str = "hello";
-
-//     printf("%s", ft_strdup(str));
-//     return (0);
-// }

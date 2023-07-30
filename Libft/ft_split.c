@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 18:17:01 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/07/29 20:58:21 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/07/30 18:52:24 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	word_length(char const *src, char delim)
 {
 	int	i;
-	int	word_len;
+		int	word_len;
 
 	i = -1;
 	word_len = 0;
